@@ -50,13 +50,13 @@ body {
 
 @keyframes mymove {
     50% {
-        background-image: url('img/con-1.jpg');
+        background-image: url('../img/con-1.jpg');
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
     }
     100% {
-        background-image: url('img/con-2.jpg');
+        background-image: url('../img/con-2.jpg');
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -171,7 +171,7 @@ body {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .about {
-    background-image: url(img/about.jpg);
+    background-image: url(../img/about.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -273,9 +273,7 @@ body {
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-                           about itm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ about itm~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .about_itm {
     background-color: rgb(23, 7, 75);
@@ -296,6 +294,18 @@ body {
 .about_itm .about_itm_inside .heading h1 {
     color: rgb(200, 187, 241);
     font-weight: 700;
+}
+
+.heading ::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 60px;
+    margin: 1%;
+    height: 5px;
+    background: #f82249;
+    bottom: 0;
+    left: calc(50% - 25px);
 }
 
 .about_itm .about_itm_inside .heading h5 {
@@ -320,6 +330,50 @@ body {
     width: 90%;
     /* height: 170px; */
     box-shadow: 4px 4px 10px black;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                           about departement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.about_department {
+    background-color: white;
+    padding: 3%;
+}
+
+.about_department .department {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    box-shadow: 4px 5px 16px black;
+    padding: 4%;
+    margin-bottom: 4%;
+}
+
+.about_department .department .heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about_department .department .heading h1 {
+    color: rgb(29, 0, 126);
+    font-weight: 700;
+}
+
+.about_department .department .heading h5 {
+    color: rgb(98, 65, 117);
+    font-weight: 300;
+    text-decoration-style: wavy;
+}
+
+.about_department .department .p {
+    margin-top: 2%;
+    color: rgb(155, 0, 116);
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    text-decoration-style: wavy;
 }
 
 
@@ -352,6 +406,7 @@ body {
     flex-wrap: wrap;
     flex-direction: left;
     justify-content: space-evenly;
+    /* gfg */
 }
 
 .col-5 {
@@ -410,10 +465,246 @@ body {
 
 .card-block {
     margin-top: -4%;
-    background-image: url(img/sponser.jpg);
+    background-image: url(../img/sponser.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                           advisory commitee
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.advisory_commitee,
+.technical_commitee {
+    background-color: rgb(85, 85, 85);
+    padding: 1%;
+}
+
+.advisory_commitee .advisory,
+.technical_commitee .advisory {
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.685);
+    padding: 4%;
+}
+
+.advisory_commitee .advisory .heading,
+.technical_commitee .advisory .heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.advisory_commitee .advisory .heading h1,
+.technical_commitee .advisory .heading h1 {
+    color: rgb(29, 0, 126);
+    font-weight: 700;
+}
+
+.advisory_commitee .advisory .heading h5,
+.technical_commitee .advisory .heading h5 {
+    color: rgb(98, 65, 117);
+    font-weight: 300;
+    text-decoration-style: wavy;
+}
+
+.advisory_commitee .advisory .committee_members,
+.technical_commitee .advisory .committee_members {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.advisory_commitee .advisory .committee_members .member_card,
+.technical_commitee .advisory .committee_members .member_card {
+    margin: 1%;
+    width: 350px;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px black;
+    color: rgb(197, 195, 195);
+    background-image: linear-gradient(45deg, rgb(7, 3, 3), rgb(43, 29, 90));
+    transition: border-radius 1s, box-shadow 1s;
+}
+
+.advisory_commitee .advisory .committee_members .member_card:hover,
+.technical_commitee .advisory .committee_members .member_card:hover {
+    border-radius: 0px;
+    box-shadow: 10px 10px 22px black;
+    color: rgb(230, 230, 230);
+    background-image: linear-gradient(45deg, rgb(31, 31, 31), rgb(65, 46, 126));
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                           Registeration details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.registeration_details {
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(85, 85, 85); */
+    padding: 1%;
+}
+
+.registeration_details .registeration {
+    background-color: rgb(223, 223, 223);
+    box-shadow: 4px 4px 14px black;
+    padding: 4%;
+}
+
+.registeration_details .registeration .heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registeration_details .registeration .heading h1 {
+    color: rgb(7, 0, 31);
+    font-weight: 700;
+}
+
+.registeration_details .registeration .links {
+    margin: 2%;
+}
+
+.registeration_details .registeration .links h6 {
+    color: rgb(98, 65, 117);
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+.registeration_details .registeration .links h6 a {
+    text-decoration: none;
+    color: rgb(207, 7, 67);
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+.registeration_details .registeration .links h6 a:hover {
+    text-decoration: underline;
+}
+
+.registeration_details .fees {
+    /* background-color: rgb(223, 223, 223);
+    box-shadow: 4px 4px 14px black; */
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.registeration_details .fees_card {
+    background-color: rgb(223, 223, 223);
+    box-shadow: 4px 4px 14px black;
+    width: 350px;
+    padding: 2%;
+    margin: 1%;
+    white-space: normal;
+}
+
+.registeration_details .fees_card .fees_for {
+    font-size: 2.2vw;
+    color: rgb(199, 0, 33);
+    font-weight: 600;
+}
+
+.registeration_details .fees_card .fees_amount {
+    font-size: 2.3vw;
+    color: rgb(5, 4, 68);
+    font-weight: 500;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                           Contact Us
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact_us {
+    background-color: rgb(172, 172, 172);
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding: 1%; */
+}
+
+.contact_us .contact {
+    background-color: rgba(0, 0, 0, 0.616);
+    /* border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.685); */
+    padding: 4%;
+}
+
+.contact_us .contact .heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_us .contact .heading h1 {
+    color: rgb(242, 238, 255);
+    font-weight: 700;
+}
+
+.contact_us .contact .heading h5 {
+    color: rgb(187, 149, 209);
+    font-weight: 300;
+    text-decoration-style: wavy;
+}
+
+.contact_us .contact .contact_cards {
+    margin: 2%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact_us .contact .contact_cards .contact_card {
+    padding: 2%;
+    /* background-color: rgba(27, 191, 197, 0.863); */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 18px black;
+    width: 290px;
+    margin: 2%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                           Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer {
+    background-color: rgb(0, 0, 39);
+}
+
+footer .container {
+    padding: 2%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .container .copyright {
+    color: rgb(164, 150, 243);
+}
+
+footer .container .credits {
+    color: rgb(164, 150, 243);
+}
+
+footer .container .credits a {
+    text-decoration: none;
+    color: rgb(184, 100, 199);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .bg-dark {
     background-color: #182d42c7!important;
@@ -425,4 +716,8 @@ body {
 
 .text-white {
     text-decoration-style: border;
+}
+
+.nav-item {
+    white-space: nowrap;
 }
