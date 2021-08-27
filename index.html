@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="icon" class="fab fa-meetup"> >
     <title>Document</title>
@@ -25,35 +28,38 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About Conference</a>
+                        <a class="nav-link text-white" href="#about_con">About Conference</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Important Date</a>
+                        <a class="nav-link text-white" href="#imp_date">Important Date</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About AIT</a>
+                        <a class="nav-link text-white" href="#about_itm">About ITM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Sponsors</a>
+                        <a class="nav-link text-white" href="#sponsors">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Advisory Committee</a>
+                        <a class="nav-link text-white" href="#advisory">Advisory Committee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Technical Program Commitee</a>
+                        <a class="nav-link text-white" href="#technical">Technical Program Commitee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contant</a>
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  register_btn" href="#register">Register</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="moving">
+    <div class="moving" id="home">
         <div class="container2">
             <!-- <h1 class="glow">WECOME THIS IS VISHAKHA</h1> -->
             <div class="container1">
@@ -69,15 +75,15 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
-    <div id="about" class="about text-white">
+    <div id="about_con" class="about text-white">
         <div class="content row ">
-            <div class="col-6 ">
+            <div class="col-6" data-aos="fade-right">
                 <h2>Vishakha</h2>
                 <p class="p"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ab laudantium illo natus, earum aliquid vitae fuga nesciunt <span class="special ">ipsum necessitatibus neque</span> fugiat voluptas. Pariatur, eaque a. Aut doloremque
                     molestias ipsam!
                 </p>
             </div>
-            <div class="col-6 ">
+            <div class="col-6 " data-aos="fade-left">
                 <h2>Gandhi</h2>
                 <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum iusto porro sit eius repellendus fuga! Expedita nulla quas quaerat,</p>
                 <ul>
@@ -97,22 +103,22 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                Important Dates 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="important_dates">
+    <div class="important_dates" id="imp_date">
         <div class="important">
             <div class="heading">
                 <h1>IMPORTANT DATES</h1>
                 <h5><i>Here are some important Dates</i></h5>
             </div>
             <div class="dates">
-                <div class="date_card">
+                <div class="date_card" data-aos="fade-up">
                     <div class="date">30 September 2021</div>
                     <div class="event">LAST DATE OF SUBMISSION</div>
                 </div>
-                <div class="date_card">
+                <div class="date_card" data-aos="fade-up">
                     <div class="date">30 September 2021</div>
                     <div class="event">LAST DATE OF SUBMISSION</div>
                 </div>
-                <div class="date_card">
+                <div class="date_card" data-aos="fade-up">
                     <div class="date">30 September 2021</div>
                     <div class="event">LAST DATE OF SUBMISSION</div>
                 </div>
@@ -122,24 +128,24 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                About AIT 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="about_itm">
+    <div class="about_itm" id="about_itm">
         <div class="about_itm_inside ">
             <div class="heading">
                 <h1>ABOUT ITM</h1>
                 <h5><i>INSTITUTE OF TECHNOLOGY AND MANAGEMENT</i></h5>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6" data-aos="fade-right">
                     <p class="about_campus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorum explicabo sed ipsum ea ratione quidem! Et illum odit sequi accusantium quibusdam modi hic quae, debitis deserunt, deleniti, doloremque dolores.</p>
                 </div>
-                <div class="col-6 campus">
+                <div class="col-6 campus" data-aos="fade-left">
                     <img class="campus_img" src="img/ITM-1.jpg" alt="Campus">
                 </div>
             </div>
         </div>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-                               Sponsers 
+                               about 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="about_department">
         <div class="department">
@@ -147,7 +153,7 @@
                 <h1>ABOUT ITM</h1>
                 <h5><i>INSTITUTE OF TECHNOLOGY AND MANAGEMENT</i></h5>
             </div>
-            <div class="p">
+            <div class="p" data-aos="fade-up">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aperiam magni quae, ipsum quibusdam voluptatem corrupti ipsa saepe, aspernatur nihil dolores? Et quibusdam dignissimos ad, error odit at nulla laborum.</p>
             </div>
         </div>
@@ -156,13 +162,13 @@
                                Sponsers 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div class="card-block " id="sponsers ">
+    <div class="card-block " id="sponsors">
         <section>
             <div class="heading">
                 <h1>SPONSORS AND PARTNERS</h1>
             </div>
             <div class="cards ">
-                <div class="col-5 ">
+                <div class="col-5 " data-aos="zoom-in">
                     <div class="images ">
                         <img class="spo" src="img/sponser-1.jpg " alt=" ">
                     </div>
@@ -173,7 +179,7 @@
                         <!-- <button class="btn ">Read more</button> -->
                     </div>
                 </div>
-                <div class="col-5 ">
+                <div class="col-5 " data-aos="zoom-in">
                     <div class="images ">
                         <img class="spo" src="img/sponser-2.jpg " alt=" ">
                     </div>
@@ -184,7 +190,7 @@
                         <!-- <button class="btn ">Read more</button> -->
                     </div>
                 </div>
-                <div class="col-5 ">
+                <div class="col-5 " data-aos="zoom-in">
                     <div class="images ">
                         <img class="spo" src="img/sponser-3.jpg " alt=" ">
                     </div>
@@ -203,12 +209,36 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                Advisry commitee 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="advisory_commitee">
+    <div class="advisory_commitee" id="advisory">
         <div class="advisory">
             <div class="heading">
                 <h1>ADVISORY COMMITEE</h1>
             </div>
-            <div class="committee_members">
+            <div class="committee_members" data-aos="slide-up">
+                <div class="member_card">
+                    <div class="member_name">
+                        <h2>Prof Anil Sahasrabudhe</h2>
+                    </div>
+                    <div class="member_position">
+                        Chairman, AICTE
+                    </div>
+                </div>
+                <div class="member_card">
+                    <div class="member_name">
+                        <h2>Prof Anil Sahasrabudhe</h2>
+                    </div>
+                    <div class="member_position">
+                        Chairman, AICTE
+                    </div>
+                </div>
+                <div class="member_card">
+                    <div class="member_name">
+                        <h2>Prof Anil Sahasrabudhe</h2>
+                    </div>
+                    <div class="member_position">
+                        Chairman, AICTE
+                    </div>
+                </div>
                 <div class="member_card">
                     <div class="member_name">
                         <h2>Prof Anil Sahasrabudhe</h2>
@@ -247,12 +277,12 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                technical program commitee 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="technical_commitee">
+    <div class="technical_commitee" id="technical">
         <div class="advisory">
             <div class="heading">
                 <h1>TECHNICAL PROGRAM COMMITEE</h1>
             </div>
-            <div class="committee_members">
+            <div class="committee_members" data-aos="slide-up">
                 <div class="member_card">
                     <div class="member_name">
                         <h2>Prof Anil Sahasrabudhe</h2>
@@ -276,12 +306,12 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                Registeration details 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="registeration_details">
+    <div class="registeration_details" id="register">
         <div class="registeration">
             <div class="heading">
                 <h1>REGISTERAION DETAILS</h1>
             </div>
-            <div class="links">
+            <div class="links" data-aos="slide-right">
                 <h6>Submit Paper
                     <a href="https://easychair.org/conferences/?conf=ncccil21">https://easychair.org/conferences/?conf=ncccil21</a>
                 </h6>
@@ -297,7 +327,7 @@
 
             </div>
         </div>
-        <div class="fees">
+        <div class="fees" data-aos="slide-up">
             <div class="fees_card">
                 <div class="fees_for">ACADEMICIANS / INDUSTRIAL PERSONS</div>
 
@@ -318,13 +348,13 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                Contacr us 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="contact_us">
+    <div class="contact_us" id="contact">
         <div class="contact">
             <div class="heading">
                 <h1>CONTACT US</h1>
                 <h5><i>We'll be glad to answer</i></h5>
             </div>
-            <div class="contact_cards">
+            <div class="contact_cards" data-aos="zoom-out">
                 <div class="contact_card">
                     <div class="head">
                         <h1>ADDRESS</h1>
@@ -365,21 +395,40 @@
             </div>
         </div>
     </footer>
+    <button onclick="topFunction()" class="scrollToTop" id="btnScrollToTop">
+        <i data-aos="fade-up" class="fas fa-arrow-up "></i>
+    </button>
 </body>
 <script src="js/bootstrap.bundle.min.js "></script>
+
+<!-- our aos data -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+
+        offset: 150,
+        duration: 800,
+    });
+</script>
+
 <script type="text/javascript ">
     var nav = document.querySelector('nav');
+    var mybutton = document.querySelector(".scrollToTop");
 
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 100) {
             nav.classList.add('bg-dark', 'shadow');
+            mybutton.style.display = "block";
         } else {
             nav.classList.remove('bg-dark', 'shadow');
+            mybutton.style.display = "none";
         }
     });
-</script>
 
-</html>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 
 </html>
