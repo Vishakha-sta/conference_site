@@ -888,10 +888,11 @@
         }
         
         footer .container {
-            padding: 2%;
+            padding: 1%;
             display: flex;
             text-align: center;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
         }
         
         footer .container .copyright {
@@ -905,6 +906,16 @@
         footer .container .credits a {
             text-decoration: none;
             color: rgb(184, 100, 199);
+        }
+        /* media */
+        
+        @media screen and (max-width: 800px) {
+            footer .container {
+                padding: 2%;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
         }
         /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                            btn scroll to top
