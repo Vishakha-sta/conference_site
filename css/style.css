@@ -112,8 +112,61 @@
             margin: auto;
             vertical-align: middle;
         }
+        .container1 h1{
+            color:white;
+            font-weight:500;
+            width: initial;
+        }
+        .container1 h1 span{
+            color: #00d0ff;
+              font-weight: 550;
+           
+        }
+        .register_btn1 {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: #0088c734;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            border: 2px solid #0276c3;
+            transition: all ease-in-out 0.3s;
+            font-weight: 500;
+            margin: 2rem;
+            margin-top: 4rem;
+            line-height: 1;
+            font-size: 3vh;
+        }
         
-        .neon {
+        .register_btn1:hover {
+            color: #fff;
+            background: #0088c7;
+            /* border: 2px solid #0061a1; */
+        }.main_btn{
+            margin:2rem;
+        }
+
+/*         media   */
+        
+        @media screen and (max-width: 800px) {
+         .register_btn1 {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: #0088c734;
+                padding: 0.6rem 0.9rem;
+            border-radius: 50px;
+            border: 2px solid #0276c3;
+            transition: all ease-in-out 0.3s;
+            font-weight: 500;
+            margin: 2rem;
+            margin-top: 4rem;
+            line-height: 1;
+            font-size: 3vh;
+        }
+           
+        }
+
+
+        /* .neon {
             font-family: neon;
             color: #FB4264;
             font-size: 9vw;
@@ -164,7 +217,7 @@
                 text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
                 color: #146C80;
             }
-        }
+        } */
         /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                            About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -207,11 +260,13 @@
             line-height: 2.2;
         }
         
-        .content .p .special {
+         .special {
             color: rgb(4, 255, 138);
-            font-weight: 700;
+            margin-top:1rem;
+            margin-bottom:1rem;
+            font-weight: 500;
         }
-        /* media   */
+/*         media   */
         
         @media screen and (max-width: 800px) {
             .about {
@@ -335,7 +390,7 @@
         /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ about itm~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         
         .about_itm {
-            background-color: rgb(23, 7, 75);
+            background-image: linear-gradient( 45deg, #6b16a0, #d2058dcf, #ff6002);
             padding: 3%;
             padding-bottom: 6%;
         }
@@ -351,11 +406,13 @@
         }
         
         .about_itm .about_itm_inside .heading h1 {
-            color: rgb(200, 187, 241);
+            color: rgb(255 255 255);
+            font-family: -webkit-body;
+            text-shadow: 19px 11px 18px black;
             font-weight: 700;
         }
         
-        h1 ::after {
+        /* h1 ::after {
             content: '';
             position: relative;
             display: block;
@@ -365,10 +422,11 @@
             background: #f82249;
             bottom: 0;
             left: calc(50% - 25px);
-        }
+        } */
         
         .about_itm .about_itm_inside .heading h5 {
-            color: rgb(160, 160, 160);
+            color: rgb(226 212 212);
+            font-size: 1.4rem;
             font-weight: 300;
             text-decoration-style: wavy;
         }
@@ -378,8 +436,9 @@
         }
         
         .about_itm .about_itm_inside .row .col-6 .about_campus {
-            color: rgb(204, 204, 204);
-            font-weight: 250;
+            color: rgb(255 253 253);
+            font-weight: 200;
+            font-size: 1.1rem;
             text-decoration-style: wavy;
         }
         
