@@ -149,10 +149,11 @@
         
         @media screen and (max-width: 800px) {
          .register_btn1 {
+             width: 3rem;
             text-decoration: none;
             color: rgb(255, 255, 255);
             background: #0088c734;
-                padding: 0.6rem 0.9rem;
+            padding: 0.3rem 0.6rem;
             border-radius: 50px;
             border: 2px solid #0276c3;
             transition: all ease-in-out 0.3s;
@@ -161,6 +162,7 @@
             margin-top: 4rem;
             line-height: 1;
             font-size: 3vh;
+            white-space: nowrap;
         }
            
         }
